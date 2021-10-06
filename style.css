@@ -65,3 +65,36 @@ ul.topnav li.center {
     margin:auto;
     width:100px;
 }
+
+/* Body */
+
+body {
+        margin: 0;
+        z-index: 1;
+        width: 100%;
+        max-width: 100%;
+        -moz-background-size: 100% 100%;
+        background: url(bg.png);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        transform-origin: top;
+    }     
+        
+h1 {
+    font-size: 5em;
+    text-align: center;
+    font-family: 'averta_stdbold';
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+    color: #327F39;
+    font-family: 'averta_stdbold';
+}  
+
+img {
+    max-width: 100%;
+    max-height: 100%;   
+}
