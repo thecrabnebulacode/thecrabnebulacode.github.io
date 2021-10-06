@@ -62,8 +62,6 @@ ul.topnav li.left {
 
 ul.topnav li.center {
     display: inline-block;
-    margin:auto;
-    width:100px;
 }
 
 /* Body */
