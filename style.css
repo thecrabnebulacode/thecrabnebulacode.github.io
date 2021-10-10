@@ -50,9 +50,9 @@ ul.topnav li a {
     font-weight: 700;
 }
 
-ul.topnav li a:hover:not(.active) {
+/* ul.topnav li a:hover:not(.active) {
     background-color: #F4F1EA;
-}
+} */
 
 /* ul.topnav li a.active {
     background-color: #F4F1EA;
