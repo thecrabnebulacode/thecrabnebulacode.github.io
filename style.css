@@ -37,7 +37,13 @@ ul.topnav {
 }
 
 ul.topnav li {
-    float: right
+    float: right;
+    font-family: "averta_stdextrabold";
+}
+
+ul.topnav li.yes {
+    float: none;
+    font-family: "averta_stdextrabold";
 }
 
 ul.topnav li a {
@@ -73,16 +79,16 @@ li:hover a {
 /* Body */
 
 body {
-        margin: 0;
-        z-index: 1;
-        width: 100%;
-        max-width: 100%;
-        -moz-background-size: 100% 100%;
-        background: url(bg.png);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        transform-origin: top;
+    margin: 0;
+    z-index: 1;
+    width: 100%;
+    max-width: 100%;
+    -moz-background-size: 100% 100%;
+    background: url(bg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform-origin: top;
     }     
         
 h1 {
@@ -96,4 +102,20 @@ h2 {
     text-align: center;
     color: #327F39;
     font-family: 'averta_stdbold';
+}
+
+p {
+    font-size: 1.8em;
+    font-family: 'averta_stdbold';
+    color: black;
+    padding: 5px;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+.middle {
+    position:absolute;
+    width:75px;
+    margin-left:50%; 
+    margin-right:50%;
 }

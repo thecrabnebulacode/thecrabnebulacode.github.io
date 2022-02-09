@@ -1,28 +1,28 @@
 <html>
 	<head>
-        <title>Bender Design Co. - Bend your mind with Bender Designs</title>
-        <meta name="description" content="Bender Design Co. - Bend your mind with Bender Designs" />
-<!--        <meta name="google-site-verification" content="gHLsfkZIbzzGGmhBs3s0YiP-bZqFqCg-oYSTDSw2CA0" /> -->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<!--        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166041917-2"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+    <title>Bender Design Co. - Bend your mind with Bender Designs</title>
+    <meta name="description" content="Bender Design Co. - Bend your mind with Bender Designs" />
+    <!--        <meta name="google-site-verification" content="gHLsfkZIbzzGGmhBs3s0YiP-bZqFqCg-oYSTDSw2CA0" /> -->
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166041917-2"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
 
-          gtag('config', 'UA-166041917-2');
-        </script> -->
-<!-- <link rel="shortcut icon" href="WaterDrop.ico" type="image/x-icon"> -->
-<link rel="stylesheet" type="text/css" href="style.css">
-		<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">  
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">  
-<link href="https://fonts.googleapis.com/css?family=Buenard|EB+Garamond|Lora|Roboto" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+              gtag('config', 'UA-166041917-2');
+            </script> -->
+    <!-- <link rel="shortcut icon" href="WaterDrop.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    		<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">  
+    <link href="https://fonts.googleapis.com/css?family=Buenard|EB+Garamond|Lora|Roboto" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        
+  <style>
+
     h1 {
 	    font-size: 5em;
         text-align: center;
@@ -40,25 +40,37 @@
         width: 75px;   
     }
 
-    div {
+    img.large {
+        width: 200px;
+    }
+
+    div.two {
         position: absolute;
         top:0;
         bottom: 0;
         left: 0;
         right: 0;
         margin: auto;
-        width: 600px;
-        height: 300px;
+        width: 750px;
+        height: 400px;
+    }
+
+    .pad {
+      padding-top:80px;
     }
 
     .middle {
     	width:75px;
-    	margin:0 auto;
+    	/* margin:0 auto; */
     }
 
     ul.topnav li.left {
     float: left;
 	  }
+
+    ul.topnav a.alt {
+    padding: 0 !important;
+    }
 
 	  li:hover a {
     color: #327F39 !important;
@@ -68,18 +80,65 @@
       width: 34px !important;
     }
 
-    row {
-      display: inline-block;
-      margin:auto;
-      width:300px;
+    .container {
+    display: flex;
+    padding-top:2em;
+    width:1000px;
     }
-        
-/* @media (min-width: 600px) {
-    .desktop-only {
-        display:block !important;
+
+    .container2 {
+    display: flex;
+    padding-top:45em;
     }
-}    */     
-      
+
+    .item {
+    background: #F97B62;
+    flex-basis: 750px;
+    height: 420px;
+    margin: 5px;
+    border: 2px solid black;
+    opacity: 0.5;
+    text-align:left;
+    float:left;
+    }
+
+    div.three {
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 100%;
+      }
+
+    ul.topnav li.yes {
+      float: none;
+    }
+
+    .row {
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+
+      /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+      float: left;
+      width: 33.33%;
+      /* padding: 5px; */
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+            
+    /* @media (min-width: 600px) {
+        .desktop-only {
+            display:block !important;
+        }
+    }    */      
     </style>
 </head>
 	
@@ -90,20 +149,40 @@
   <li><a href="logos">LOGOS</a></li>
   <li><a href="work">WORK</a></li>
   <li><a href="about">ABOUT</a></li>
-  <li><div class="middle"><img src="EB-logo.svg" style="padding-top:7px"></div></li>
+  <li class="yes"><div class="middle"><a class="alt" href="index.html"><img src="EB-logo.svg" style="padding-top:7px"></a></div></li>
   <li class="left"><a href="http://www.benderdesignco.com/"><img class="social" src="linkedin_black.svg"></a></li>
   <li class="left"><a href="http://www.benderdesignco.com/"><img class="social" src="facebook_black.svg"></a></li>
   <li class="left"><a href="http://www.benderdesignco.com/"><img class="social" src="ig_black.svg"></a></li>
   <li class="left"><a href="http://www.benderdesignco.com/"><img class="social" src="dribbble_black.svg"></a></li>
 </ul>
 
-<div>
+<div class="two pad">
 	<center><h1>EDDIE BENDER</h1></center>
 	<center><h2>Graphic & brand identity designer in Tampa, Florida</h2></center>
 </div>
 
-<!-- <div class="row">
-  <img src="Legion-helmet-HOMEPAGE.jpg">
-  <img src="LGM-truck-wrap-HOMEPAGE.jpg">
-  <img src="Gator-mascot-HOMEPAGE.jpg">
-</div> -->
+<div class="row container2">
+  <div class="column">
+    <img class="large" src="helmet.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img class="large" src="rose.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img class="large" src="car.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+<center>
+  <div class="three container">
+    <div class="item">
+      <h2>About</h2>
+        <p>The FloodShark: An enigmatic producer/composer turned digital, cartilaginous thresher surfing the sonic waves with an eclectic musical style.</p>
+        <p>After spending 8 years in Riyadh, Saudi Arabia, followed by the next 10 off coastal Virginia and 7 lurking around the Sunshine State, the Shark's taken residency along the continental shelf of Colombia.</p>
+      </div>
+    <div class="item">
+      <h2>Music</h2>
+      <center><iframe style="border: 0; width: 300px; height: 300px;" src="https://bandcamp.com/EmbeddedPlayer/track=2535133974/size=large/bgcol=ffffff/linkcol=333333/minimal=true/transparent=true/" seamless><a href="https://thefloodshark.bandcamp.com/track/i-dont-know-ya-know">I Don&#39;t Know, Ya Know? by The FloodShark</a></iframe></center>
+    </div>
+  </div>
+</center>
