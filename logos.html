@@ -25,30 +25,26 @@
         
     h1 {
       font-size: 5em;
-        text-align: center;
-        font-family: 'averta_stdbold';
+      text-align: center;
+      font-family: 'averta_stdbold';
     }
 
     h2 {
       font-size: 3em;
-        text-align: center;
-        color: #327F39;
-        font-family: 'averta_stdbold';
-    }  
-
-    img {
-        width: 75px;   
+      text-align: center;
+      color: #327F39;
+      font-family: 'averta_stdbold';
     }
 
     div {
-        position: absolute;
-        top:0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 600px;
-        height: 300px;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 600px;
+      height: 300px;
     }
 
     .middle {
@@ -57,16 +53,32 @@
     }
 
     ul.topnav li.left {
-    float: left;
+      float: left;
     }
 
     li:hover a {
-    color: #327F39 !important;
+      color: #327F39 !important;
     }
 
     img.social {
       width: 34px !important;
     }
+
+    /* grids */
+
+  .grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+    margin: 20px;
+    }
+
+  .grid img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    max-width: 100%;
+  }
         
 /* @media (min-width: 600px) {
     .desktop-only {
@@ -92,6 +104,15 @@
 </ul>
 
 <div>
-  <center><h1>EDDIE BENDER</h1></center>
-  <center><h2>Graphic & brand identity designer in Tampa, Florida</h2></center>
+  <center><h1>Logos</h1></center>
 </div>
+
+<main class="grid">
+  <img src="jg1.jpg" alt="">
+  <img src="jg2.jpg" alt="">
+  <img src="jg3.jpg" alt="">
+  <img src="jg4.jpg" alt="">
+  <img src="jg5.jpg" alt="">
+  <img src="jg6.jpg" alt="">
+  <img src="jg7.jpg" alt="">
+</main>
