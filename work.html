@@ -36,7 +36,7 @@
       font-family: 'averta_stdbold';
     }
 
-    div {
+    /* div {
       position: absolute;
       top:0;
       bottom: 0;
@@ -45,11 +45,11 @@
       margin: auto;
       width: 800px;
       height: 300px;
-    }
+    } */
 
     .middle {
       width:75px;
-      margin:0 auto;
+      position:absolute;
     }
 
     ul.topnav li.left {
@@ -62,6 +62,11 @@
 
     img.social {
       width: 34px !important;
+    }
+
+    .container2 {
+      display: flex;
+      padding-top:2em;
     }
 
     /* grids */
@@ -81,7 +86,38 @@
   }
 
   main {
-    padding-top:25em;
+    padding-top:5em;
+  }
+
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  img.large {
+    width: 200px;
+  }
+
+  ul.topnav a.alt {
+    padding: 0 !important;
+  }
+
+  ul.topnav li.yes {
+    float: none;
   }
         
 /* @media (min-width: 600px) {
@@ -100,15 +136,27 @@
   <li><a href="logos">LOGOS</a></li>
   <li><a href="work">WORK</a></li>
   <li><a href="about">ABOUT</a></li>
-  <li><div class="middle"><img src="EB-logo.svg" style="padding-top:7px"></div></li>
+  <li class="yes"><div class="middle"><a class="alt" href="index.html"><img src="EB-logo.svg" style="padding-top:7px"></a></div></li>
   <li class="left"><a href="http://www.benderdesignco.com/"><img class="social" src="linkedin_black.svg"></a></li>
   <li class="left"><a href="http://www.benderdesignco.com/"><img class="social" src="facebook_black.svg"></a></li>
   <li class="left"><a href="http://www.benderdesignco.com/"><img class="social" src="ig_black.svg"></a></li>
-  <li class="left"><a href="http://www.benderdesignco.com/"><img class="social" src="dribbble_black.svg"></a></li>
+  <!-- <li class="left"><a href="http://www.benderdesignco.com/"><img class="social" src="dribbble_black.svg"></a></li> -->
 </ul>
 
 <div>
   <center><h1>Peruse the Projects</h1></center>
+</div>
+
+<div class="row container2">
+  <div class="column">
+    <img class="large" src="helmet.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img class="large" src="rose.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img class="large" src="car.jpg" alt="Mountains" style="width:100%">
+  </div>
 </div>
 
 <main class="grid">
