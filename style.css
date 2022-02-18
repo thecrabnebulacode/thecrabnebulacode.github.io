@@ -20,6 +20,11 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'AvertaStd-Semibold';
+    src: url("fonts/AvertaStd-Semibold.otf") format("opentype");
+}
+
 /* Menu Bar */
 
 ul.topnav {
@@ -128,4 +133,12 @@ p {
     width:75px;
     margin-left:50%; 
     margin-right:50%;
+}
+
+hr {
+    border: 3px solid #327F39 !important;
+    margin:0 !important;
+    width:70% !important;
+    margin: 0 auto !important;
+    padding:0 !important;
 }
