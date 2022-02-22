@@ -136,7 +136,10 @@ p {
 }
 
 hr {
-    border: 3px solid #327F39 !important;
+    background: #327F39 !important;
+    /* border: 3px solid #327F39 !important; */
+    height:5px !important;
+    border:none;
     margin:0 !important;
     width:70% !important;
     margin: 0 auto !important;
