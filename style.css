@@ -13,6 +13,11 @@
 }
 
 @font-face {
+    font-family: 'AvertaStd-Regular';
+    src: url("path/GraublauWeb.otf") format("opentype");
+}
+
+@font-face {
     font-family: 'averta_stdextrabold';
     src: url('fonts/avertastd-extrabold-webfont.woff2') format('woff2'),
          url('fonts/avertastd-extrabold-webfont.woff') format('woff');
