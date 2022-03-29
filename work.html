@@ -131,6 +131,7 @@
 
   .overlay {
   position: absolute;
+  /* z-index:-1;*/
   top: 0;
   bottom: 0;
   left: 0;
@@ -158,6 +159,10 @@
   	max-width:250px;
   }
 
+  a.click{
+  	z-index:2;
+  }
+
 /* @media (min-width: 600px) {
     .desktop-only {
         display:block !important;
@@ -171,7 +176,7 @@
 
 <ul class="topnav">
   <li><a href="contact">CONTACT</a></li>
-  <li><a href="logos">LOGOS</a></li>
+  <!-- <li><a href="logos">LOGOS</a></li> -->
   <li><a href="work">WORK</a></li>
   <li><a href="about">ABOUT</a></li>
   <li class="yes"><div class="middle"><a class="alt" href="https://benderdesignco.com/"><img src="EB-logo.svg" style="padding-top:7px"></a></div></li>
@@ -195,11 +200,11 @@
   </div>
   <div class="column">
   	<div class="hover">
-	    <a href="jgourmet"><img class="large" src="jg.jpg" alt="JGourmet" style="width:100%"></a>
-	    <div class="overlay">
-	  	</div>
+	    <img class="large" src="jg.jpg" alt="JGourmet" style="width:100%">
+	    <a href="jgourmet" class="click"><div class="overlay">
+	  	</div></a>
   	</div>
-  </div>
+  </div></a>
   <div class="column">
   	<div class="hover">
 	    <img class="large" src="lgm.jpg" alt="Later Gator Moving" style="width:100%">
