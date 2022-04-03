@@ -280,6 +280,44 @@
       opacity: 0;
     }
 
+    #section05 a span {
+    border-left: 13px solid black;
+    border-bottom: 13px solid black;
+    }
+
+    /* Form */
+
+    div.column.is-half {
+    width: 50%;
+    }
+
+.button {
+    background-color: #fff;
+    border-color: #dbdbdb;
+    border-width: 1px;
+    color: #363636;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: calc(0.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.button.is-primary {
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff;
+}
+
+.button.is-primary.is-hovered, .button.is-primary:hover {
+    background-color: #00c4a7;
+    border-color: transparent;
+    color: #fff;
+}
+
     </style>
 </head>
 
@@ -318,31 +356,33 @@
 </div>
 
 <center>
-  <div class="three container">
-    <div class="item2">
-      <!-- <h2>Logo</h2> -->
-      <p>&nbsp</p>
-        <img class="mid" src="badge.svg" alt="Bender Designs Badge">
-      </div>
-    <div class="item">
-      <h2>Get in touch!</h2>
-      <p>Have a project in mind? Let's discuss your next big idea!</p>
-      <div class="form">
-        <form action="/action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-        
-          <input type="submit" value="Submit">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-half">
+        <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+          <!-- Replace with your StaticForms accessKey -->
+          <input type="text" name="honeypot" style="display: none;">
+          <input type="hidden" name="accessKey" value="e5fea9fb-0f21-497e-bd3b-dd26bfeb1465">
+          <input type="hidden" name="subject" value="Test from jsfiddle">
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" name="name" placeholder="Enter Your Name" required>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" name="email" placeholder="Enter Your Email" required>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" name="message" placeholder="Enter Your Message" required></textarea>
+            </div>
+          </div>
+          <button class="button is-primary" type="Submit">Submit</button>
         </form>
       </div>
     </div>
